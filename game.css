@@ -1,0 +1,57 @@
+.profile1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 90px;
+}
+
+.h2 {
+    font-size: 40px;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.flex-container {
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Itim', cursive;
+}
+
+.font1 {
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Itim', cursive;
+}
+
+.sizefontchoice1 {
+    font-size: 20px;
+}
+
+.chaya {
+    font-size: 100px;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Itim', cursive;
+}
+
+.chaya1 {
+    font-size: 35px;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.bg1 {
+    font-size: 60px;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Itim', cursive;
+}
