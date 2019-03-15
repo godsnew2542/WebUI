@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     var pru_day = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
         '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
         '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'
@@ -25,7 +25,7 @@ $(function() {
         'https://bit.ly/2CcUcxb', 'https://bit.ly/2EYgRPm', 'https://bit.ly/2F0l3yj', 'https://bit.ly/2SURbHf',
         'https://bit.ly/2TFMNjI', 'https://bit.ly/2EOdUj7', 'https://bit.ly/2EYHPGx', 'https://bit.ly/2Cc8Jt4'
     ]; //20
-    $('#go').click(function() {
+    $('#go').click(function () {
         var day = $('.day').val();
         var month = $('.month').val();
         var s = $('.sex').val();
@@ -38,6 +38,112 @@ $(function() {
             alert("กรุณาเลือกวันเกิดของคุณ")
         } else if (month == 0) {
             alert("กรุณาเลือกเดือนเกิดของคุณ")
+        } else if (month == 2) {
+            if (day >= 29) {
+                alert("ไม่มีวันที่คุณเลือก")
+            } else if (day <= 28) {
+                if (s != 1 && s != 2) {
+                    document.getElementById('myImage').src = nopc[0];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 2) {
+                    document.getElementById('myImage').src = sman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 1) {
+                    document.getElementById('myImage').src = swoman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                }
+            }
+
+        } else if (month == 4) {
+            if (day == 31) {
+                alert("ไม่มีวันที่คุณเลือก")
+            } else if (day <= 30) {
+                if (s != 1 && s != 2) {
+                    document.getElementById('myImage').src = nopc[0];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 2) {
+                    document.getElementById('myImage').src = sman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 1) {
+                    document.getElementById('myImage').src = swoman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                }
+            }
+        } else if (month == 6) {
+            if (day == 31) {
+                alert("ไม่มีวันที่คุณเลือก")
+            } else if (day <= 30) {
+                if (s != 1 && s != 2) {
+                    document.getElementById('myImage').src = nopc[0];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 2) {
+                    document.getElementById('myImage').src = sman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 1) {
+                    document.getElementById('myImage').src = swoman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                }
+            }
+        } else if (month == 9) {
+            if (day == 31) {
+                alert("ไม่มีวันที่คุณเลือก")
+            } else if (day <= 30) {
+                if (s != 1 && s != 2) {
+                    document.getElementById('myImage').src = nopc[0];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 2) {
+                    document.getElementById('myImage').src = sman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 1) {
+                    document.getElementById('myImage').src = swoman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                }
+            }
+        } else if (month == 11) {
+            if (day == 31) {
+                alert("ไม่มีวันที่คุณเลือก")
+            } else if (day <= 30) {
+                if (s != 1 && s != 2) {
+                    document.getElementById('myImage').src = nopc[0];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 2) {
+                    document.getElementById('myImage').src = sman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                } else if (s != 0 && s != 1) {
+                    document.getElementById('myImage').src = swoman[rdm1];
+                    $('#show').text(result);
+                    $('#show2').text(feer);
+                    $('#show3').text(feer1);
+                }
+            }
         } else if (s != 1 && s != 2) {
             document.getElementById('myImage').src = nopc[0];
             $('#show').text(result);
